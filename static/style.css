@@ -1,0 +1,22 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	margin: 0 auto;
+	width: 95%;
+	padding: 5px;
+}
+
+.upload_form {
+	display: inline-block;
+	padding: 10px;
+}
+
+.view_file_content_area {
+	overflow: auto;
+	height: 700px;
+	margin: 10px;
+}
+
+table, td, th {
+	border: 1px solid black;
+}

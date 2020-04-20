@@ -1,0 +1,16 @@
+<table id='uploaded_files_table'>
+	<tbody>
+		<thead>
+			<tr>
+				<th>Filename</th>
+				<th>Creation time</th>
+			</tr>
+		</thead>
+		{% for file in files %}
+		<tr>
+			<td>{{ file.filename }}</td>
+			<td>{{ file.creation_time }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

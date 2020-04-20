@@ -1,0 +1,24 @@
+<table>
+	<tbody>
+		<thead>
+			<tr>
+				<th></th>
+				{% for col_id in cols_ids %}
+				<th>
+					{{ col_id }}
+				</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		{% for i in range(table|length) %}
+		<tr>
+			<td>
+				{{ i + 1 }}
+			</td>
+			{% for cell in table[i] %}
+				<td>{{ cell }}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
